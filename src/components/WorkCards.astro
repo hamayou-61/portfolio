@@ -1,0 +1,24 @@
+---
+import type { Work } from '../library/microcms'
+
+interface Props {
+	works?:  Work[];
+}
+const { works } = Astro.props;
+---
+
+<div class="flex gap-8 mt-10 md:mt-16 mx-auto md:flex-row flex-col">
+  {
+    works && works.map((content: any) => 
+    <div class="card md:w-1/2 w-full glass bg-white shadow-xl">
+      <figure><img src={content.images[0].url} alt="HeyPATH"/></figure>
+      <div class="card-body">
+        <h2 class="card-title">{content.title}<span class="badge badge-primary badge-outline">{content.category}</span></h2>
+        <p>{content.subtitle}</p>
+        <div class="card-actions justify-end">
+          <a class="btn " href={`/works/` + content.id}>くわしくみる</a>
+        </div>
+      </div>
+    </div>
+  )}
+</div>

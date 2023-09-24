@@ -1,0 +1,29 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import BaseHeader from '../components/BaseHeader.astro';
+import BaseFooter from '../components/BaseFooter.astro';
+import { SITE_TITLE } from '../consts';
+
+import '@fontsource-variable/noto-sans-jp';
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja" data-theme="dark">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body class="font-medium">
+		<BaseHeader title={SITE_TITLE} />
+		<main >
+			<slot />
+		</main>
+		<BaseFooter />
+	</body>
+</html>

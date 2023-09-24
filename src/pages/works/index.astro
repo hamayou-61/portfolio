@@ -1,0 +1,15 @@
+---
+import { getWorks } from "../../library/microcms";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WorkCards from '../../components/WorkCards.astro';
+import SectionTitle from '../../components/SectionTitle.astro';
+
+const response = await getWorks({ fields: ["id","title","subtitle","images","category"] });
+---
+
+<BaseLayout title="つくったもの | 浜見洋介" description="浜見洋介のポートフォリオサイトです。過去に作ったものを掲載しています。">
+	<section class="mt-20 md:mt-32 md:w-8/12 w-11/12 max-w-5xl mx-auto">
+		<SectionTitle title="つくったもの" id="works" className="text-center"/>
+		<WorkCards works={response.contents}/>
+	</section>
+</BaseLayout>

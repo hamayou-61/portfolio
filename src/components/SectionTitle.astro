@@ -1,0 +1,13 @@
+---
+interface Props {
+	title?: string | undefined;
+	id?: string | undefined;
+	className?: string | undefined;
+}
+
+const { title, id, className } = Astro.props;
+---
+
+<h2 class={"md:text-5xl text-3xl font-bold tracking-wider " + className} id={id}>
+	{title}
+</h2>
