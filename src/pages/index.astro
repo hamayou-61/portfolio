@@ -11,10 +11,10 @@ import { SITE_TITLE,SITE_DESCRIPTION } from '../consts';
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-	<section class="mt-16 md:mt-32 md:w-8/12 w-11/12 max-w-5xl mx-auto">
+	<section class="mt-16 md:mt-32 md:w-10/12 lg:w-8/12 w-11/12 max-w-5xl mx-auto">
 		<SectionTitle title="浜見洋介" id="about" className="text-center"/>
 		<div class="mt-10 md:mt-16 card lg:card-side bg-white  shadow-xl" >
-			<figure class="md:w-6/12 md:h-auto w-full h-40 bg-accent"><img src="/img/profile.png" alt="プロフィール画像" class="h-full"/></figure>
+			<figure class="lg:w-6/12 lg:h-auto w-full h-48 bg-accent"><img src="/img/profile.png" alt="プロフィール画像" class="h-full"/></figure>
 			<div class="card-body">
 				<h3 class="card-title tracking-wider">経歴</h3>
 				<p class="text-md mt-2">
@@ -32,7 +32,7 @@ import { SITE_TITLE,SITE_DESCRIPTION } from '../consts';
 		</div>
 	</section>
 
-	<section class="mt-28 md:mt-40 md:w-8/12 w-11/12 max-w-5xl mx-auto">
+	<section class="mt-28 md:mt-40 md:w-10/12 lg:w-8/12 w-11/12 max-w-5xl mx-auto">
 		<SectionTitle title="つくったもの" id="works" className="text-center"/>
 		<WorkCards works={response.contents}/>
 	</section>

@@ -17,7 +17,7 @@ const work = await getWorkDetail(workId as string);
 ---
 
 <BaseLayout title={work.title + ` | 浜見洋介`} description={work.subtitle}>
-  <section class="mt-16 md:mt-32 w-10/12 max-w-5xl mx-auto">
+  <section class="mt-16 md:mt-32 md:w-10/12 lg:w-8/12 w-11/12 max-w-5xl mx-auto">
     <div class=" md:flex justify-between">
       <div>
         <p class="badge badge-primary badge-outline">{work.category}</p>
