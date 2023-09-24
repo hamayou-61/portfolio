@@ -3,6 +3,9 @@
 個人用のポートフォリオサイトです。  
 キーワード：Astro3 / TypeScript / MicroCMS / tailwindcss / daisyui
 
+https://hamayou-portfolio.vercel.app/
+
+
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
 | `pnpm install`             | Installs dependencies                            |
