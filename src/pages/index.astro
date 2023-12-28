@@ -1,10 +1,10 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import WorkCards from '../components/WorkCards.astro';
-import SectionTitle from '../components/SectionTitle.astro';
-import SnsButtons from '../components/SnsButtons.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import WorkCards from '@components/WorkCards.astro';
+import SectionTitle from '@components/SectionTitle.astro';
+import SnsButtons from '@components/SnsButtons.astro';
 
-import { getWorks } from "../library/microcms";
+import { getWorks } from "@library/microcms";
 const response = await getWorks({ fields: ["id", "title","subtitle","images","category"] });
 import { SITE_TITLE,SITE_DESCRIPTION } from '../consts';
 

@@ -1,7 +1,7 @@
 ---
-import { getWorks, getWorkDetail } from "../../library/microcms";
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import SectionTitle from '../../components/SectionTitle.astro';
+import { getWorks, getWorkDetail } from "@library/microcms";
+import BaseLayout from '@layouts/BaseLayout.astro';
+import SectionTitle from '@components/SectionTitle.astro';
 
 export async function getStaticPaths() {
   const response = await getWorks({ fields: ["id"] });
