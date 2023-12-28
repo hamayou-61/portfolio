@@ -1,8 +1,8 @@
 ---
-import { getWorks } from "../../library/microcms";
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import WorkCards from '../../components/WorkCards.astro';
-import SectionTitle from '../../components/SectionTitle.astro';
+import { getWorks } from "@library/microcms";
+import BaseLayout from '@layouts/BaseLayout.astro';
+import WorkCards from '@components/WorkCards.astro';
+import SectionTitle from '@components/SectionTitle.astro';
 
 const response = await getWorks({ fields: ["id","title","subtitle","images","category"] });
 ---
