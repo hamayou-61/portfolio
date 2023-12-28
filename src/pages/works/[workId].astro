@@ -50,7 +50,7 @@ const work = await getWorkDetail(workId as string);
     }
 
     <div class="mt-12">
-      {work.images.map((image,index)=> {
+      {work.images.map((image)=> {
           return <figure class="mt-8"><img src={image.url}></figure>
         }
       )}
