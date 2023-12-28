@@ -1,7 +1,7 @@
 # Portfolio
 
 個人用のポートフォリオサイトです。  
-キーワード：Astro3 / TypeScript / MicroCMS / tailwindcss / daisyui
+キーワード：Astro4 / TypeScript / MicroCMS / tailwindcss / daisyui
 
 https://hamayou-portfolio.vercel.app/
 
